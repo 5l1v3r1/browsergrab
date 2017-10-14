@@ -1,0 +1,22 @@
+{
+    "name": "browsergrab",
+    "version": "1.0.0",
+    "description": "Get all browser specific information about a target who visits your URL",
+    "main": "dist/index.js",
+    "scripts": {
+        "pretest": "tsc && tsc -p src/static/",
+        "test": "node dist/"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@types/commander": "^2.11.0",
+        "@types/fingerprintjs2": "^1.5.0",
+        "@types/mongodb": "^2.2.13",
+        "commander": "^2.11.0",
+        "mongodb": "^2.2.33"
+    },
+    "bin": {
+        "grabserver": "./dist/index.js"
+    }
+}
